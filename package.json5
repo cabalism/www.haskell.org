@@ -1,0 +1,21 @@
+{
+  "name": "www.haskell.org",
+  "devDependencies": {
+    "purgecss": "^6.0.0",
+    "sass": "^1.77.6"
+  },
+  "scripts": {
+    // Original CSS files have already been copied to site/css-backup
+    "backup-css": "mkdir -p site/css-backup && cp site/css/*.css site/css-backup/",
+    // If you want to use some of the purged CSS styles then do the following:
+    // 1. Restore the original CSS files.
+    // 2. Build the static site and then tidy the CSS there.
+    // 3. Copy the tidied CSS back to the source directory.
+    "restore-css": "cp site/css-backup/*.css site/css/",
+    // Tidy the CSS in place, within the built static site.
+    "tidy-css-static": "purgecss --config ./purgecss.config.js && sass _site/css/hl.css _site/css/hl.css --no-source-map && sass _site/css/fonts.css _site/css/fonts.css --no-source-map",
+    // Assumes the site has been built. Tidies the CSS in the static site and
+    // then copies thoese CSS files back to the source directory.
+    "tidy-css-source": "pnpm run tidy-css-static && cp _site/css/*.css site/css/"
+  }
+}
