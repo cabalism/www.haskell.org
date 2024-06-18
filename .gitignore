@@ -11,5 +11,8 @@ dist-newstyle
 result*
 built-site
 
+# Web
+node_modules
+
 # Emacs
 *~
