@@ -7,10 +7,17 @@ settings:
 importers:
 
   .:
+    dependencies:
+      bootstrap:
+        specifier: 3.1.1
+        version: 3.1.1
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.8.1
         version: 1.8.1
+      normalize.css:
+        specifier: 3.0.3
+        version: 3.0.3
       purgecss:
         specifier: ^6.0.0
         version: 6.0.0
@@ -107,6 +114,9 @@ packages:
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
+
+  bootstrap@3.1.1:
+    resolution: {integrity: sha512-TAzqS8E/ISpVHP29gYhy+1NSV+FJwApDVQhDfgLYsIuUDJiqJzH2DfORN5tiu+Ie2iBLrzEG34t4Rf465cigqg==}
 
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
@@ -220,6 +230,9 @@ packages:
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
+
+  normalize.css@3.0.3:
+    resolution: {integrity: sha512-7OavvKXqPta8bgGhWzcUOnZ9KCkANYzbq4ytNKgNeFRTaz3KAm1eGUQ/vyAeVjlDXjolsbYREctuzyQytCDiBA==}
 
   path-key@3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
@@ -377,6 +390,8 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
+  bootstrap@3.1.1: {}
+
   brace-expansion@2.0.1:
     dependencies:
       balanced-match: 1.0.2
@@ -478,6 +493,8 @@ snapshots:
   nanoid@3.3.7: {}
 
   normalize-path@3.0.0: {}
+
+  normalize.css@3.0.3: {}
 
   path-key@3.1.1: {}
 
